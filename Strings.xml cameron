@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fitness App</string>
+    <string name="kg">kg</string>
+    <string name="m">m</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="under_18_5_underweight">Under 18.5: Underweight</string>
+    <string name="_18_5_to_24_9_healthy_weight">18.5 to 24.9: Healthy Weight</string>
+    <string name="_25_0_to_29_9_overweight">25.0 to 29.9: Overweight</string>
+    <string name="over_30_obese">Over 30: Obese</string>
+    <string name="left_thigh">Left Thigh</string>
+    <string name="right_calf">Right Calf</string>
+    <string name="chest_width">Chest Width</string>
+    <string name="waist_width">Waist Width</string>
+    <string name="r_forearm">R Forearm</string>
+    <string name="l_forearm">L Forearm</string>
+    <string name="left_bicep">Left Bicep</string>
+    <string name="right_bicep">Right Bicep</string>
+    <string name="left_calf">Left Calf</string>
+    <string name="right_thigh">Right Thigh</string>
+    <string name="neck_width">Neck Width</string>
+    <string name="enter_your_measurements">Enter your measurements</string>
+</resources>

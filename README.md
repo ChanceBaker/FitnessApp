@@ -1,2 +1,2 @@
 "# FitnessApp" 
-Fitness App v1 is submission
+Fitness App v1.1 is submission

@@ -9,5 +9,6 @@ public class ArmWorkouts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.arm_workouts);
+//         I can edit these files
     }
 }

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TableRow
+                android:id="@+id/gifRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:contentDescription="@string/lying_face_down_plate_neck_resistance"
+                    android:cropToPadding="false"
+                    android:src="@drawable/plate_neck_resist"
+                    android:visibility="visible"
+                    tools:layout_width="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/face_down_plate_neck_resistance"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/reps_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:text="@string/reps_15_25"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/sets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sets_text"
+                    android:padding="10dp"
+                    android:text="@string/sets2to3"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/how_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/how_to_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="Primary Target: Neck
+\n\nHow to:\n1 - Lie face down with your whole body straight on a flat bench while holding a weight plate behind your head. You will need to position yourself so that your shoulders are slightly above the end of a flat bench in order for the upper chest, neck and face to be off the bench. This will be your starting position.
+\n\n2 - While keeping the plate secure on the back of your head slowly lower your head (as in saying yes) as you breathe in.
+\n\n3 - Raise your head back up to the starting position in a semi-circular motion as you breathe out. Hold the contraction for a second.
+\n\n4 - Caution: As with all exercises, refrain from using any sort of sudden or jerking motions.
+\n\nVariation: You can opt to use no resistance at first."
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

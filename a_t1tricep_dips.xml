@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@android:color/black"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TableRow
+                android:id="@+id/gifRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/tricep_dips"
+                    android:src="@drawable/tricep_dips"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/tricep_dips"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/reps_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:text="@string/reps8to12"
+                    android:gravity= "center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/sets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sets_text"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/sets2to3"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/how_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/how_to_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:gravity= "center"
+                    android:text="Primary Target: Triceps
+\n\nHow to:\n1 - To get into the starting position, hold your body at arm's length with your arms nearly locked above the bars.
+\n\n2 - Now, inhale and slowly lower yourself downward. Your torso should remain upright and your elbows should stay close to your body. This helps to better focus on tricep involvement. Lower yourself until there is a 90 degree angle formed between the upper arm and forearm.
+\n\n3 - Then, exhale and push your torso back up using your triceps to bring your body back to the starting position.
+\n\n4 - Repeat the movement for the prescribed amount of repetitions.
+\n\nVariation - If you are new at this exercise and do not have the strength to perform it, use a dip assist machine if available. These machines use weight to help you push your bodyweight.
+\nOtherwise, a spotter holding your legs can help.
+\nMore advanced lifters can add weight to the exercise by using a weight belt that allows the addition of weighted plates."
+
+                    android:textColor="@android:color/white"
+                    tools:ignore="HardcodedText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

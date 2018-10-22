@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@android:color/black"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TableRow
+                android:id="@+id/gifRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Calf Machine Shoulder Shrugs"
+                    android:src="@drawable/calf_shoulder_shrug"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Calf Muscle Shoulder Shrugs"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/reps_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:text="@string/reps8to12"
+                    android:gravity= "center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/sets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sets_text"
+                    android:padding="10dp"
+                    android:text="@string/sets3to4"
+                    android:gravity= "center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/how_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/how_to_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:gravity= "center"
+                    android:text="Primary Target: Traps (Trapezius)
+\n\nHow to:\n1 - Position yourself on the calf machine so that the shoulder pads are above your shoulders. Your torso should be straight with the arms extended normally by your side. This will be your starting position.
+\n\n2 - Raise your shoulders up towards your ears as you exhale and hold the contraction for a full second.
+\n\n3 - Slowly return to the starting position as you inhale.
+\n\n4 - Repeat for the recommended amount of repetitions.
+\n\nVariations - You can use dumbbells, barbells, smith machines and pulley machines to perform shrugging motions."
+                    tools:ignore="HardcodedText"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

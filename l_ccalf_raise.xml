@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@android:color/black"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TableRow
+                android:id="@+id/gifRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/calf_raise"
+                    android:src="@drawable/calf_raise"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/smith_machine_calf_raise"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/reps_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:text="@string/reps8to12"
+                    android:gravity= "center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/sets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sets_text"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/sets2to3"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/how_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/how_to_text"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:gravity= "center"
+                    android:text="Primary Target: Calves
+\n\nHow to:\n1 - Place a block or weight plate below the bar on the Smith machine. Set the bar to a position that best matches your height. Once the correct height is chosen and the bar is loaded, step onto the plates with the balls of your feet and place the bar on the back of your shoulders.
+\n\n2 - Take the bar with both hands facing forward. Rotate the bar to unrack it. This will be your starting position.
+\n\n3 - Raise your heels as high as possible by pushing off of the balls of your feet, flexing your calf at the top of the contraction. Your knees should remain extended. Hold the contracted position for a second before you start to go back down.
+\n\n4 - Return slowly to the starting position as you breathe in while lowering your heels.
+\n\n5 - Repeat for the recommended amount of repetitions."
+                    android:textColor="@android:color/white"
+                    tools:ignore="HardcodedText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="100dp" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

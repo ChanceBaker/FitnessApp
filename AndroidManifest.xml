@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fitapp.sdp.fitnessapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Exercises"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NeckExercises"
+            android:parentActivityName=".Exercise_Body_Parts" />
+        <activity
+            android:name=".Workouts"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Nutrition"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Tips"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyProgress"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Exercise_Body_Parts"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".n1HeadLift"
+            android:parentActivityName=".NeckExercises" />
+        <activity
+            android:name=".n2PlateNeckResist"
+            android:parentActivityName=".NeckExercises" />
+        <activity
+            android:name=".n3IsometricNeck"
+            android:parentActivityName=".NeckExercises" />
+        <activity
+            android:name=".n4NeckBridge"
+            android:parentActivityName=".NeckExercises" />
+        <activity
+            android:name=".Exercise_Legs"
+            android:parentActivityName=".Exercise_Body_Parts" />
+        <activity
+            android:name=".Chest"
+            android:parentActivityName=".Exercise_Body_Parts" />
+        <activity
+            android:name=".Shoulders"
+            android:parentActivityName=".Exercise_Body_Parts" />
+        <activity
+            android:name=".Arms"
+            android:parentActivityName=".Exercise_Body_Parts" />
+        <activity
+            android:name=".CoreExercises"
+            android:parentActivityName=".Exercise_Body_Parts" />
+        <activity
+            android:name=".Exercise_Back"
+            android:parentActivityName=".Exercise_Body_Parts" />
+        <activity
+            android:name=".FlatBenchPress"
+            android:parentActivityName=".Chest" />
+        <activity
+            android:name=".InclineBenchPress"
+            android:parentActivityName=".Chest" />
+        <activity
+            android:name=".DeclineBenchPress"
+            android:parentActivityName=".Chest" />
+        <activity
+            android:name=".TrapExercises"
+            android:parentActivityName=".Exercise_Body_Parts"/>
+        <activity
+            android:name=".t3BarbellShrugs"
+            android:parentActivityName=".TrapExercises"/>
+        <activity
+            android:name=".t1SmithMachineShrug"
+            android:parentActivityName=".TrapExercises"/>
+        <activity
+            android:name=".t2LeverageShrug"
+            android:parentActivityName=".TrapExercises"/>
+        <activity
+            android:name=".t4SumoHighPull"
+            android:parentActivityName=".TrapExercises"/>
+        <activity
+            android:name=".t5CalfShoulderShrug"
+            android:parentActivityName=".TrapExercises"/>
+        <activity
+            android:name=".ab1MedicineBallSlam"
+            android:parentActivityName=".CoreExercises"/>
+        <activity
+            android:name=".ab2Plank"
+            android:parentActivityName=".CoreExercises"/>
+        <activity
+            android:name=".ab3BottomsUp"
+            android:parentActivityName=".CoreExercises"/>
+        <activity
+            android:name=".ab4Landmine"
+            android:parentActivityName=".CoreExercises"/>
+        <activity
+            android:name=".Biceps"
+            android:parentActivityName=".Arms"/>
+        <activity
+            android:name=".a_bCableCurl"
+            android:parentActivityName=".Biceps"/>
+        <activity
+            android:name=".a_bHammerCurl"
+            android:parentActivityName=".Biceps"/>
+        <activity
+            android:name=".a_bSpiderCurl"
+            android:parentActivityName=".Biceps"/>
+        <activity
+            android:name=".Triceps"
+            android:parentActivityName=".Arms"/>
+        <activity
+            android:name=".a_tTricepDips"
+            android:parentActivityName=".Triceps"/>
+        <activity
+            android:name=".Forearms"
+            android:parentActivityName=".Arms"/>
+        <activity
+            android:name=".a_fBenchWristCurl"
+            android:parentActivityName=".Forearms"/>
+        <activity
+            android:name=".Quads"
+            android:parentActivityName=".Exercise_Legs"/>
+        <activity
+            android:name=".l_qSingleLegPress"
+            android:parentActivityName=".Quads"/>
+        <activity
+            android:name=".Hamstrings"
+            android:parentActivityName=".Exercise_Legs"/>
+        <activity
+            android:name=".l_hCleanDeadlift"
+            android:parentActivityName=".Hamstrings"/>
+        <activity
+            android:name=".Calves"
+            android:parentActivityName=".Exercise_Legs"/>
+        <activity
+            android:name=".l_cCalfRaise"
+            android:parentActivityName=".Calves">
+
+        </activity>
+    </application>
+
+</manifest>

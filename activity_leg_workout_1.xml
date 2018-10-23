@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exercise_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/gym"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/workout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/leg_workout_1"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/exercise_1_checkbox"
+            app:layout_constraintEnd_toEndOf="@id/exercise_1_checkbox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableRow
+            android:id="@+id/exercise_1"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/exercise_1_textview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/single_leg_press_exercise"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/exercise_1_checkbox"
+                app:layout_constraintEnd_toEndOf="@id/exercise_1_checkbox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/exercise_1_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/exercise_1_textview"
+                app:layout_constraintTop_toTopOf="@id/exercise_1_textview" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/exercise_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            style="@android:style/Widget.Holo.Button">
+
+            <TextView
+                android:id="@+id/exercise_2_textview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/deadlift_exercise"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/exercise_1_checkbox"
+                app:layout_constraintEnd_toEndOf="@id/exercise_1_checkbox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/exercise_2_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/exercise_1_textview"
+                app:layout_constraintTop_toTopOf="@id/exercise_1_textview" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/exercise_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            style="@android:style/Widget.Holo.Button">
+
+            <TextView
+                android:id="@+id/exercise_3_textview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/calf_raise_exercise"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/exercise_1_checkbox"
+                app:layout_constraintEnd_toEndOf="@id/exercise_1_checkbox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/exercise_3_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/exercise_1_textview"
+                app:layout_constraintTop_toTopOf="@id/exercise_1_textview" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/save_workout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            style="@android:style/Widget.Holo.Button">
+
+            <Button
+                android:id="@+id/save_workout_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                style="@android:style/Widget.Holo.Light.Button"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:visibility="invisible"
+            style="@android:style/Widget.Holo.Button">
+
+            <TextView
+                android:id="@+id/messageText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="You must check at least 1 exercise to save"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/exercise_1_checkbox"
+                app:layout_constraintEnd_toEndOf="@id/exercise_1_checkbox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

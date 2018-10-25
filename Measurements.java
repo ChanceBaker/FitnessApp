@@ -38,13 +38,15 @@ public class Measurements extends AppCompatActivity {
     private void saveProcess() {
 
         getValues();
-        if(!noValues())
+         if(!noValues())
         {
+            noValues.setVisibility(View.INVISIBLE);
             checkValues();
             createAndSaveRecord();
         }
         else
         {
+            saved.setVisibility(View.INVISIBLE);
             noValues.setVisibility(View.VISIBLE);
         }
 
